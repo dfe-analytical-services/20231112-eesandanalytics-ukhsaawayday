@@ -1,0 +1,442 @@
+---
+title: "Statistics publishing at DfE"
+author: "Laura Selby - Head of Statistics Services Unit, DfE"
+format:
+  revealjs:
+    logo: logo.png
+    smaller: true
+theme: white
+class: smaller
+fig-cap-location: top
+layout-valign: center
+css: "custom.css"
+---
+
+# Intro
+
+What I'll cover today
+
+-   The statistics services unit at DfE
+-   Explore Education Statistics and dashboards
+-   Accessibility
+-   Google analytics
+
+## DfE Statistics Services Unit
+
+::::::::: columns
+::: {.column width="40%"}
+DfE's Statistics Services Unit (SSU):
+
+A small central resource providing advice and support to statisticians and those working with statistics across the department.
+
+We aim to raise standards and build capability - empowering our statisticians to develop themselves, their processes, and their products in line with the pillars of the code of practice for official statistics.
+
+We maintain several resources and tools to support DfE statisticians in their work.
+
+![Our team mascot - Frederick:](img/builder_frederick.png){fig-align="center" width="50%"}
+:::
+
+::::::: {.column width="60%"}
+SSU is made up of four teams:
+
+::: box
+-   **Statistics Head of Profession Office**
+
+    Supports statistics processes and best practice in line with the GSS Code of Practice. Lead on supporting the statistics community.
+:::
+
+::: box
+-   **Explore education statistics platforms**
+
+    Dedicated digital support to all statisticians and analysts publishing data publicly, leading the development of the Explore education statistics service and public facing dashboards.
+:::
+
+::: box
+-   **Statistics Development Team**
+
+    Provide learning and development support for analysts, lead on Reproducible Analytical Pipelines (RAP).
+:::
+
+::: box
+-   **Compare School and College Performance**
+
+    Product ownership for Compare School and College Performance
+:::
+:::::::
+:::::::::
+
+## The work of SSU
+
+::::: columns
+::: column
+Our objectives:
+
+**Platforms:**
+
+We maintain, enhance, and maximize the use of cutting-edge platforms for external data dissemination.
+
+**Standards:**
+
+We maintain guidance, communicate standards, and facilitate a culture of continuous improvement.
+
+**Internal impact:**
+
+We continuously engage with our internal stakeholders as a point of contact for all things statistics. We work with comms and private offices to ensure our statistics are impactful and handled correctly within the organization.
+
+**Skills:**
+
+We support teams to build the skills they need to meet best practice standards
+
+**Community:**
+
+We invest in our community to make sure it’s a great place to work and develop, providing professional support and advice to statisticians in DfE and building an engaged GSS community.
+:::
+
+::: column
+![SSU support offer poster:](ssu-support.svg){fig-align="right" width="80%"}
+:::
+:::::
+
+# Explore education statistics
+
+## A quick h-EES-tory
+
+Began in 2018, with user research to understand the needs of both producers and users of published education statistics.
+
+That research identified two priorities:
+
+-   We needed a more flexible, modern statistics publishing service (Explore Education Statistics) to better support what our users need and the department's statistics function.
+
+-   To continue to implement Reproducible Analytical Pipelines (RAP), and move to a single consistent open data standard underpinning all of our statistics releases, making all of our public data machine readable, our production more efficient, and upskilling staff.
+
+Following that we took EES through the Alpha and Private Beta digital delivery phases, developing the platform's functionality in line with user feedback.
+
+In tandem to the EES development we worked on establishing a consistent open data structure with plans to use the launch of the service to embed and facilitate basic use of RAP at scale.
+
+In March 2020 we launched EES as a Public Beta Service and it has been our default route for statistics publishing ever since (replacing the previous method of publishing static documents on gov.uk).
+
+We've been committed to further enhancing EES in line with user needs since launch, our current development focus is adding stable API access to data across EES releases.
+
+> A platform for statistics publishing, built by statistics publishers.
+
+# What has the move to EES brought us?
+
+The platform's goal is to make it easier for users to find, access, navigate, and understand education statistics, while also empowering producers to work more efficiently and innovatively.
+
+It is a service with two parts - admin and public facing websites.
+
+## Consistent open data
+
+::::: columns
+::: {.column width="60%"}
+Our consistent, machine readable open data is where the real power of the service lies. 
+
+Poor consistency is a regular criticism we have heard from users and focusing on delivering comprehensive machine readable data with a query tool on top has helped us focus our automation efforts to the area with the most gain.
+:::
+
+::: {.column width="40%"}
+![Consistent open data standards](img/data-format.png)::
+:::
+:::::
+
+::::: columns
+::: {.column width="60%"}
+Consistency is ensured by use of our “[**Data Screener**](https://github.com/dfe-analytical-services/dfe-published-data-qa)” App, which allows teams to independently test their datasets. 
+
+It runs automated tests against formatting best practice and data harmonisation rules (e.g. consistent labels for key variables) and provides quick feedback and guidance where files fail.
+:::
+
+::: {.column width="40%"}
+![](img/data-screener.png)
+:::
+:::::
+
+Extensive guidance is made available to via our [analysts guide](https://dfe-analytical-services.github.io/analysts-guide/statistics-production/ud.html).
+
+## EES admin
+
+
+A secure environment with publication and release based permission levels. Including managing pre-release access.
+
+### Data upload and consistent surfacing
+
+::::: columns
+::: {.column width="40%"}
+The presentation of data items is powered from initial data and metadata upload. Including labeling, ordering and rule-based footnotes.
+
+We have a simple data replacement feature that allows you to swap in similar data files without having to recreate charts or tables.
+:::
+
+::: {.column width="60%"}
+![](img/admin-uploaded-data.png)
+:::
+:::::
+
+## EES admin
+
+### Release editor
+
+::::: columns
+::: {.column width="40%"}
+A content editor to create their release content, combining text blocks and data blocks into a html release page.
+
+Admin users are able to comment on content and we've built in automatic accessibility checks to ensure our analysts don't inadvertently introduce accessibility issues to the service.
+:::
+
+::: {.column width="60%"}
+![](img/admin-editor.png)
+:::
+:::::
+
+## EES admin
+
+### Autonomous scheduling
+
+::::: columns
+::: {.column width="40%"}
+An autonomous publishing process, allows for efficient sign off and scheduling. Publications can be created and published quickly.
+
+We have also integrated a release sign off checklist to catch some of the regular things our teams may forget to address.
+:::
+
+::: {.column width="60%"}
+![](img/admin-sign-off.png)
+:::
+:::::
+
+## EES public
+
+### Release pages
+
+::::: columns
+::: {.column width="70%"}
+Accessible html reports ([example](https://explore-education-statistics.service.gov.uk/find-statistics/suspensions-and-permanent-exclusions-in-england)) provide users with engaging headline messages, and accordions help users to navigate to the parts of the report they want to see.
+
+There are links to related information and past releases as well as clear feedback routes and ability to subscribe to release notifications.
+
+Users can access glossary entries directly from release pages and embedded charts and tables linked directly to the underpinning datasets enhance the commentary.
+
+![](img/public-release-extras.png)
+:::
+
+::: {.column width="30%"}
+![](img/public-release-page.png)
+:::
+:::::
+
+## EES public
+
+### Table tool
+
+::::: columns
+::: {.column width="50%"}
+A [step-by-step query tool](https://explore-education-statistics.service.gov.uk/data-tables) that sits on top of our large open data files and allows our users to filter down to what they're interested in.
+
+Once created users can alter the order of their table and download it in either human or machine readable format.
+
+Users can save and share specific tables via our 'permalink' feature ([example](https://explore-education-statistics.service.gov.uk/data-tables/permalink/6ef0d431-7909-45a6-1d5b-08dd0254fb9b)) which has been helpful for us answering PQs and FOIs.
+
+Footnotes are automatically generated alongside data items in line with the rules statisticians set up within EES admin.
+:::
+
+::: {.column width="50%"}
+![](img/public-table-tool.png)
+:::
+:::::
+
+## EES public
+
+### Data catalogue
+
+::::: columns
+::: {.column width="50%"}
+A single [catalogue](https://explore-education-statistics.service.gov.uk/data-catalogue) for all DfE’s published statistics.
+
+You can filter and preview datasets and we have plans to make this even more useful by adding geographic level and commonly requested variable filters to support speedier access to data sets of interest.
+
+![](img/dataset-preview.png){width="75%"}
+:::
+
+::: {.column width="50%"}
+![](img/public-data-catalogue.png){width="65%"}
+:::
+:::::
+
+## EES public
+
+### Methodology pages and glossary
+
+::::: columns
+::: {.column width="50%"}
+Each publication has a dedicated methodology page ([example](https://explore-education-statistics.service.gov.uk/methodology/key-stage-2-attainment)) where we can move a lot of the detailed content that is more suitable to expert users.
+
+We also have a service [glossary](https://explore-education-statistics.service.gov.uk/glossary) which collects key terms across the service in one place.
+
+![](img/public-glossary-2.png)
+:::
+
+::: {.column width="50%"}
+![](img/public-methodology.png){width="65%"}
+:::
+:::::
+
+# Dashboards 
+
+## EES, dashboards and other services
+
+::::: columns
+::: {.column width="60%"}
+Whilst EES is our primary dissemination route and gives us a core for transparent public facing statistics.
+
+We tried to build it in a way that would work well with other secondary services that support more specific user needs or behaviors. These can often make use of the same data sources and our aim is to reduce this duplication and make our processes more efficient via use of APIs.
+
+These secondary services could be R shiny dashboards ([example](https://department-for-education.shinyapps.io/pupil-attendance-in-schools/)) or tailored services (e.g. [Compare School and College Performance](https://www.compare-school-performance.service.gov.uk/)).
+
+We have developed our use of R shiny significantly over recent years as demand has grown, and have created supporting materials:
+
+-   [DfE Shiny template](https://github.com/dfe-analytical-services/shiny-template)
+-   [DfE dashboards guidance](https://dfe-analytical-services.github.io/analysts-guide/writing-visualising/dashboards.html)
+-   [dfeshiny](https://github.com/dfe-analytical-services/dfeshiny) R package (to complement our use of [shinygovstyle](https://github.com/moj-analytical-services/shinyGovstyle))
+
+:::
+
+::: {.column width="40%"}
+![](img/ees-system.png){width="65%"}
+:::
+:::::
+
+# Accessibility
+
+## Accessibility testing and guidance
+
+We submit EES for a full accessibility audit each year, but in our latest one we extended it to include an example shiny dashboard too. This tests with multiple users of different accessibility needs using both desktop and mobile devices and provides a comprehensive report for any areas that fail.
+
+![](img/dac-testing.png){width="65%"}
+
+We were lucky enough to visit the [Digital Accessibility Centre (DAC)](https://www.digitalaccessibilitycentre.org/) during the testing window and were able to speak to the testers as they were carrying out our audit.
+
+We have also made use of DfE's empathy lab in Sheffield, which is set up with a range of assistive tools and software you can use to test services yourself.
+
+The audits and empathy lab have been extremely helpful but we also encourage accessibility checking as part of everyday development pipelines - making use of automated checkers and sharing accessible components via our templates.
+
+-   Our [accessibility resources](https://dfe-analytical-services.github.io/analysts-guide/learning-development/accessibility.html)
+
+# Analytics
+
+## Use of Google Analytics
+
+Teams automatically get access to a wealth of user analytics to understand how their products are being used.
+
+We currently share this via headline data through R shiny dashboards (one for EES and one for dashboards) but can provide more detailed information from Google analytics as needed.
+
+::: {layout-nrow="1"}
+![User numbers over time](img/ga-users-over-time.png)
+
+![New users vs established users](img/ga-new-vs-established.png)
+
+![Where do new users come from](img/ga-referrer.png)
+
+![Number who used service in past 30 days, 7 days, and 1 day](img/ga-repeated-by-day.png)
+:::
+
+::::: columns
+::: {.column width="25%"}
+EES sessions by day since launch:
+:::
+
+::: {.column width="75%"}
+![](img/ees-all-time-sessions.png)
+:::
+:::::
+
+## Use of Google Analytics
+
+We encourage our publication teams to make use of the analytics to build an understanding of how their users interact with their product and to inform their future release development.
+
+:::::: columns
+::: {.column width="40%"}
+![](img/ga-release-page.png){width="60%"}
+:::
+
+:::: {.column width="60%"}
+::: box
+Google Analytics isn't perfect, it is reliant on cookie consent and therefore does not represent the whole picture. I has been a useful indicator to us to compare scale across publications and from release to release but is not a concrete measure.
+:::
+
+-   Total page views
+
+-   Source and referrer information (where users came to this page from)
+
+-   Download all data button clicks
+
+-   Individual file downloads
+
+-   Top search terms
+
+-   How many times each content section has been opened:
+
+-   Users that scrolled more than 80% of the page
+
+-   We can also calculate things like expected time to read
+
+-   And from elsewhere in the service we can also share number of table tool tables created, permalink page views and methodology page views etc.
+::::
+::::::
+
+## Other uses of Analytics
+
+We have also used Google analytics to support:
+
+-   Monitoring the impact and value of EES feature development. For example, did moving that button over there actually help more people find it?
+-   EES service KPIs. Are more users coming to our service?
+-   A review of DfE's publication estate and to help make cases for change where we could prune areas our efforts look to not be adding as much value. For example, to support dashboard retirement.
+-   To understand usage of our supporting service, like the analysts guide.
+
+### Microsoft clarity
+
+You could also check out Microsoft Clarity which we recently started using on our Compare School and College Performance website. We're still getting to grips with it but it can provide some cool insight like where users have been focused during their session.
+
+![Microsoft clarity:](img/microsoft-clarity.png)
+
+## Other user engagement to inform development 
+
+:::::: columns
+::: {.column width="70%"}
+
+We're regularly talking and testing with EES users to inform our development to better meet their needs. 
+
+As we've been operating for a few years now we've been carrying out a general research refresh to update our understanding of users and ensure we're still a fit for purpose service. Through this work we have been updating:
+
+- User needs (reviewing previous and adding any new)
+- User personas
+- User journies
+
+As well as gathering evidence for if the move to EES has been a good one, to support our plans for a 'live assessment'.
+
+We have an established prototype and testing process for each significant development to the service to ensure we don't waste significant developer effort on a design that we are not confident in. 
+
+Our beta banner survey can be used to collect information form users as they navigate the service. 
+
+We share our work and future plans internally via monthly show and tells and Teams updates. 
+:::
+
+::: {.column width="30%"}
+![](img/user-design.png)
+:::
+::::::
+
+# Close
+
+## Thank you!
+
+Feel free to contact us about any of this.
+
+[laura.selby\@education.gov.uk](mailto:Laura.SELBY@education.gov.uk)
+
+[cameron.race\@education.gov.uk](mailto:Cameron.RACE@education.gov.uk)
+
+### Do you want to use EES?
+
+We have granted access to some colleagues from other departments to our test environment to test how a service like EES might be able to work for them.
+
+If that's something you're interested in just let us know.
