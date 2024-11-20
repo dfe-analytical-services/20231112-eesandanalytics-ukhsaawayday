@@ -129,7 +129,7 @@ It is a service with two parts - admin and public facing websites.
 
 ::::: columns
 ::: {.column width="60%"}
-Our consistent, machine readable open data is where the real power of the service lies. 
+Our consistent, machine readable open data is where the real power of the service lies.
 
 Poor consistency is a regular criticism we have heard from users and focusing on delivering comprehensive machine readable data with a query tool on top has helped us focus our automation efforts to the area with the most gain.
 :::
@@ -141,7 +141,7 @@ Poor consistency is a regular criticism we have heard from users and focusing on
 
 ::::: columns
 ::: {.column width="60%"}
-Consistency is ensured by use of our “[**Data Screener**](https://github.com/dfe-analytical-services/dfe-published-data-qa)” App, which allows teams to independently test their datasets. 
+Consistency is ensured by use of our “[**Data Screener**](https://github.com/dfe-analytical-services/dfe-published-data-qa)” App, which allows teams to independently test their datasets.
 
 It runs automated tests against formatting best practice and data harmonisation rules (e.g. consistent labels for key variables) and provides quick feedback and guidance where files fail.
 :::
@@ -154,7 +154,6 @@ It runs automated tests against formatting best practice and data harmonisation 
 Extensive guidance is made available to via our [analysts guide](https://dfe-analytical-services.github.io/analysts-guide/statistics-production/ud.html).
 
 ## EES admin
-
 
 A secure environment with publication and release based permission levels. Including managing pre-release access.
 
@@ -280,7 +279,7 @@ We also have a service [glossary](https://explore-education-statistics.service.g
 :::
 :::::
 
-# Dashboards 
+# Dashboards
 
 ## EES, dashboards and other services
 
@@ -297,7 +296,6 @@ We have developed our use of R shiny significantly over recent years as demand h
 -   [DfE Shiny template](https://github.com/dfe-analytical-services/shiny-template)
 -   [DfE dashboards guidance](https://dfe-analytical-services.github.io/analysts-guide/writing-visualising/dashboards.html)
 -   [dfeshiny](https://github.com/dfe-analytical-services/dfeshiny) R package (to complement our use of [shinygovstyle](https://github.com/moj-analytical-services/shinyGovstyle))
-
 :::
 
 ::: {.column width="40%"}
@@ -398,32 +396,31 @@ You could also check out Microsoft Clarity which we recently started using on ou
 
 ![Microsoft clarity:](img/microsoft-clarity.png)
 
-## Other user engagement to inform development 
+## Other user engagement to inform development
 
-:::::: columns
+::::: columns
 ::: {.column width="70%"}
-
-We're regularly talking and testing with EES users to inform our development to better meet their needs. 
+We're regularly talking and testing with EES users to inform our development to better meet their needs.
 
 As we've been operating for a few years now we've been carrying out a general research refresh to update our understanding of users and ensure we're still a fit for purpose service. Through this work we have been updating:
 
-- User needs (reviewing previous and adding any new)
-- User personas
-- User journies
+-   User needs (reviewing previous and adding any new)
+-   User personas
+-   User journies
 
 As well as gathering evidence for if the move to EES has been a good one, to support our plans for a 'live assessment'.
 
-We have an established prototype and testing process for each significant development to the service to ensure we don't waste significant developer effort on a design that we are not confident in. 
+We have an established prototype and testing process for each significant development to the service to ensure we don't waste significant developer effort on a design that we are not confident in.
 
-Our beta banner survey can be used to collect information form users as they navigate the service. 
+Our beta banner survey can be used to collect information form users as they navigate the service.
 
-We share our work and future plans internally via monthly show and tells and Teams updates. 
+We share our work and future plans internally via monthly show and tells and Teams updates.
 :::
 
 ::: {.column width="30%"}
 ![](img/user-design.png)
 :::
-::::::
+:::::
 
 # Close
 
