@@ -406,7 +406,7 @@ As we've been operating for a few years now we've been carrying out a general re
 
 -   User needs (reviewing previous and adding any new)
 -   User personas
--   User journies
+-   User journeys
 
 As well as gathering evidence for if the move to EES has been a good one, to support our plans for a 'live assessment'.
 
